@@ -5,11 +5,15 @@
 width: 90px;
 height: 90px;
 }
-
+a:link{
+  color: white;
+}
 .navegacion{
   text-align: right;  
 }
-
+a:visited{
+  color: white;
+}
 .header{
     background-color: rgb(124, 124, 124);
 }
