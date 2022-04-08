@@ -1,5 +1,5 @@
 .body-home{
-    background-color: rgb(164, 164, 164);
+    background-image: url(../img/musica.jpeg) ;
 }
 .logo-gitmusic{
 width: 90px;
@@ -62,10 +62,95 @@ a:visited{
   background-color: white;
 }
 
+<<<<<<< HEAD
+=======
+
+.titulo-canciones{
+  color: white;
+  font-family: 'Raleway', sans-serif; 
+ }
+ .titulo-albunes{
+   color: white;
+   font-family: 'Raleway', sans-serif; 
+ }
+
+ .titulo-artistas{
+  color: white;
+  font-family: 'Raleway', sans-serif;
+ }
+
+.canciones{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap ;
+  justify-content: space-between;
+
 }
-.bodygenres{
+
+.cajas-canciones{
+  color: white;
+  background-color: rgba(124, 124, 124, 0.3); 
+  margin: 15px;
+  padding: 15px; 
+  border: 3px solid rgb(96, 96, 96);
+  text-align: center;
+  font-family: 'Raleway', sans-serif; 
+}
+
+.imagenC {
+  width: 175px;
+  height: 175px;
+}
+
+.albunes{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap ;
+  justify-content: space-between;
+}
+
+.cajas-albunes{
+  color: white;
+  background-color: rgba(124, 124, 124, 0.3); 
+  margin: 15px;
+  padding: 15px; 
+  border: 3px solid rgb(96, 96, 96);
+  text-align: center;
+  font-family: 'Raleway', sans-serif; 
+}
+
+.imagenA {
+  width: 175px;
+  height: 175px;
+}
+
+.artistas{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap ;
+  justify-content: space-between;
+}
+
+.cajas-artistas{
+  color: white;
+  background-color: rgba(124, 124, 124, 0.3); 
+  margin: 15px;
+  padding: 15px; 
+  border: 3px solid rgb(96, 96, 96);
+  text-align: center;
+  font-family: 'Raleway', sans-serif; 
+
+}
+
+.imagenAr{
+  width: 175px;
+  height: 175px;
+>>>>>>> 6b62ac32c9d086033d12affc7fc6cf6634cad4b3
+}
+.genres {
   background-image: url("../img/musica.jpeg");
 }
+
 .footerp{
   text-decoration: none;
 }
