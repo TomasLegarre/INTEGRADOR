@@ -15,8 +15,54 @@ a:visited{
   color: white;
 }
 .header{
-    background-color: rgb(124, 124, 124);
+    background-color: rgba(96, 96, 96, 0.4);
+    font-family:'Raleway', sans-serif;
 }
+.bodytrack{
+  background-image: url(../img/musica.jpeg);
+}
+.nombretema{
+  font-family: 'Raleway', sans-serif;
+  color: white;
+}
+.albumde{
+  font-family: 'Raleway', sans-serif;
+  color: lightgrey;
+}
+.titulotrack{
+  font-family: 'Raleway', sans-serif;
+  color: white;
+  text-align: center;
+}
+.trackdetails{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.trackbox{
+  color: white;
+  background-color: rgba(96, 96, 96, 0.4);
+  margin: 70px;
+  padding: 15px;
+  border: 3px solid rgb(124, 124, 124);
+  width: 380px;
+  height: 430px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.track{
+  width: 175px;
+  height: 175px;
+}
+.boton{
+  font-family: 'Raleway', sans-serif;
+  background-color: white;
+}
+
+
 .titulo-canciones{
   color: white;
   font-family: 'Raleway', sans-serif; 
@@ -97,4 +143,15 @@ a:visited{
 .imagenAr{
   width: 175px;
   height: 175px;
+}
+.genres {
+  background-image: url("../img/musica.jpeg");
+}
+
+.footerp{
+  text-decoration: none;
+}
+.titulop{
+  text-align: center;
+  color: white;
 }
