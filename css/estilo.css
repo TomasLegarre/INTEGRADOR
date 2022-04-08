@@ -17,3 +17,13 @@ a:visited{
 .header{
     background-color: rgb(124, 124, 124);
 }
+.bodygenres{
+  background-image: url("../img/musica.jpeg");
+}
+.footerp{
+  text-decoration: none;
+}
+.titulop{
+  text-align: center;
+  color: white;
+}
