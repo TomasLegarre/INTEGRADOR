@@ -17,3 +17,19 @@ a:visited{
 .header{
     background-color: rgb(124, 124, 124);
 }
+
+.canciones{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: ;
+  justify-content: space-between;
+
+}
+
+.imagenC {
+  width: 175px;
+  height: 175px;
+  margin: 15px;
+  padding: 15px;
+}
+
