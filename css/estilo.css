@@ -1,178 +1,157 @@
 .body-home{
-    background-image: url(../img/musica.jpeg) ;
+  background-image: url(../img/musica.jpeg) ;
 }
 .logo-gitmusic{
-width: 150px;
-height: 120px;
+width: 90px;
+height: 90px;
 }
 a:link{
-  color: white;
+color: white;
 }
 .navegacion{
-  text-align: right;  
+text-align: right;  
 }
 a:visited{
-  color: white;
+color: white;
 }
 .header{
-    background-color: black;
-    font-family:'Raleway', sans-serif;
+  background-color: rgba(96, 96, 96, 0.4);
+  font-family:'Raleway', sans-serif;
 }
 .bodytrack{
-  background-image: url(../img/musica.jpeg);
+background-image: url(../img/musica.jpeg);
 }
 .nombretema{
-  font-family: 'Raleway', sans-serif;
-  color: white;
+font-family: 'Raleway', sans-serif;
+color: white;
 }
 .albumde{
-  font-family: 'Raleway', sans-serif;
-  color: lightgrey;
+font-family: 'Raleway', sans-serif;
+color: lightgrey;
 }
 .titulotrack{
-  font-family: 'Raleway', sans-serif;
-  color: white;
-  text-align: center;
+font-family: 'Raleway', sans-serif;
+color: white;
+text-align: center;
 }
 .trackdetails{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: center;
 }
 .trackbox{
-  color: white;
-  background-color: rgba(96, 96, 96, 0.4);
-  margin: 70px;
-  padding: 15px;
-  border: 3px solid rgb(124, 124, 124);
-  width: 380px;
-  height: 430px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+color: white;
+background-color: rgba(96, 96, 96, 0.4);
+margin: 70px;
+padding: 15px;
+border: 3px solid rgb(124, 124, 124);
+width: 380px;
+height: 430px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
 }
 .track{
-  width: 175px;
-  height: 175px;
+width: 175px;
+height: 175px;
 }
 .boton{
-  font-family: 'Raleway', sans-serif;
-  background-color: white;
+font-family: 'Raleway', sans-serif;
+background-color: white;
 }
-<<<<<<< HEAD
-.bodygenres{
-=======
 
-<<<<<<< HEAD
-=======
 
 .titulo-canciones{
-  color: white;
-  font-family: 'Raleway', sans-serif; 
- }
- .titulo-albunes{
-   color: white;
-   font-family: 'Raleway', sans-serif; 
- }
+color: white;
+font-family: 'Raleway', sans-serif; 
+}
+.titulo-albunes{
+ color: white;
+ font-family: 'Raleway', sans-serif; 
+}
 
- .titulo-artistas{
-  color: white;
-  font-family: 'Raleway', sans-serif;
- }
+.titulo-artistas{
+color: white;
+font-family: 'Raleway', sans-serif;
+}
 
 .canciones{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap ;
-  justify-content: space-between;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap ;
+justify-content: space-between;
 
 }
 
 .cajas-canciones{
-  color: white;
-  background-color: rgba(124, 124, 124, 0.3); 
-  margin: 15px;
-  padding: 15px; 
-  border: 3px solid rgb(96, 96, 96);
-  text-align: center;
-  font-family: 'Raleway', sans-serif; 
+color: white;
+background-color: rgba(124, 124, 124, 0.3); 
+margin: 15px;
+padding: 15px; 
+border: 3px solid rgb(96, 96, 96);
+text-align: center;
+font-family: 'Raleway', sans-serif; 
 }
 
 .imagenC {
-  width: 175px;
-  height: 175px;
+width: 175px;
+height: 175px;
 }
 
 .albunes{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap ;
-  justify-content: space-between;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap ;
+justify-content: space-between;
 }
 
 .cajas-albunes{
-  color: white;
-  background-color: rgba(124, 124, 124, 0.3); 
-  margin: 15px;
-  padding: 15px; 
-  border: 3px solid rgb(96, 96, 96);
-  text-align: center;
-  font-family: 'Raleway', sans-serif; 
+color: white;
+background-color: rgba(124, 124, 124, 0.3); 
+margin: 15px;
+padding: 15px; 
+border: 3px solid rgb(96, 96, 96);
+text-align: center;
+font-family: 'Raleway', sans-serif; 
 }
 
 .imagenA {
-  width: 175px;
-  height: 175px;
+width: 175px;
+height: 175px;
 }
 
 .artistas{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap ;
-  justify-content: space-between;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap ;
+justify-content: space-between;
 }
 
 .cajas-artistas{
-  color: white;
-  background-color: rgba(124, 124, 124, 0.3); 
-  margin: 15px;
-  padding: 15px; 
-  border: 3px solid rgb(96, 96, 96);
-  text-align: center;
-  font-family: 'Raleway', sans-serif; 
+color: white;
+background-color: rgba(124, 124, 124, 0.3); 
+margin: 15px;
+padding: 15px; 
+border: 3px solid rgb(96, 96, 96);
+text-align: center;
+font-family: 'Raleway', sans-serif; 
 
 }
 
 .imagenAr{
-  width: 175px;
-  height: 175px;
->>>>>>> 6b62ac32c9d086033d12affc7fc6cf6634cad4b3
+width: 175px;
+height: 175px;
 }
 .genres {
->>>>>>> 9539f809b1b49f9941727de6ec60c0bec025965f
-  background-image: url("../img/musica.jpeg");
+background-image: url("../img/musica.jpeg");
 }
 
 .footerp{
-  text-decoration: none;
+text-decoration: none;
 }
 .titulop{
-  text-align: center;
-  color: white;
-}
-.gen{
-  width: 175px;
-  height: 175px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.sectionp{
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  margin: 15px;
+text-align: center;
+color: white;
 }
