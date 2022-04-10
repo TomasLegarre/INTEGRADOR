@@ -1,23 +1,41 @@
+
 .body-home{
-  background-image: url(../img/musica.jpeg) ;
+  background-image: url(../img/musica.jpeg);
+  background-repeat: no-repeat; 
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; 
+  
+  
 }
 .logo-gitmusic{
 width: 90px;
 height: 90px;
+align-items:center;
+padding-bottom: 25px;
 }
+
+.header{
+  font-family:'Raleway', sans-serif;
+  align-items: center;
+  text-align: center;
+  color: white;
+  
+}
+
+.navegacion a{
+  padding: 10px 30px;
+  text-decoration: none;
+}
+
 a:link{
 color: white;
 }
-.navegacion{
-text-align: right;  
-}
+
 a:visited{
 color: white;
 }
-.header{
-  background-color: rgba(96, 96, 96, 0.4);
-  font-family:'Raleway', sans-serif;
-}
+
 .bodytrack{
 background-image: url(../img/musica.jpeg);
 }
