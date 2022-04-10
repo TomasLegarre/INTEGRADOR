@@ -1,5 +1,5 @@
 
-.body-home{
+.body{
   background-image: url(../img/musica.jpeg);
   background-repeat: no-repeat; 
   background-size: cover;
@@ -20,7 +20,6 @@ padding-bottom: 25px;
   align-items: center;
   text-align: center;
   color: white;
-  
 }
 
 .navegacion a{
@@ -36,9 +35,6 @@ a:visited{
 color: white;
 }
 
-.bodytrack{
-background-image: url(../img/musica.jpeg);
-}
 .nombretema{
 font-family: 'Raleway', sans-serif;
 color: white;
@@ -51,6 +47,7 @@ color: lightgrey;
 font-family: 'Raleway', sans-serif;
 color: white;
 text-align: center;
+margin-top: 4%;
 }
 .trackdetails{
 display: flex;
@@ -113,6 +110,10 @@ text-align: center;
 font-family: 'Raleway', sans-serif; 
 }
 
+.linkcancion{
+  text-decoration: none;
+}
+
 .imagenC {
 width: 175px;
 height: 175px;
@@ -161,9 +162,6 @@ font-family: 'Raleway', sans-serif;
 .imagenAr{
 width: 175px;
 height: 175px;
-}
-.genres {
-background-image: url("../img/musica.jpeg");
 }
 
 .footerp{
