@@ -183,3 +183,14 @@ text-decoration: none;
     width: 175px;
     height: 175px;
   }
+.geneross{
+  padding: 15px;
+  margin: 15px;
+  border: 3px solid rgb(96, 96, 96);
+  text-align: center;
+
+}
+.link{
+  text-decoration: none;
+  font-family: 'Raleway', sans-serif;
+}
