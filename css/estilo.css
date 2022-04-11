@@ -176,6 +176,18 @@ height: 175px;
 text-decoration: none;
 }
 .titulop{
-text-align: center;
-color: white;
-}
+  font-family: 'Raleway', sans-serif;
+  color: white;
+  text-align: center;
+  margin-top: 4%;
+  }
+  .sectionp{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .gen{
+    width: 175px;
+    height: 175px;
+  }
