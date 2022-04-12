@@ -49,14 +49,25 @@ padding-bottom: 25px;
   padding: 10px 30px;
   text-decoration: none;
 }
+.form-h2{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row; 
+  justify-content: space-between;
+  align-items: center;
+}
+
+.gitMusic-logo{
+justify-self: center;
+}
 
 .search{
- align-self: flex-end;
- width: 50%;
-
+ 
 }
+
 .search input{
-  width: 100%;
+  border-style:double; 
 }
 
 a:link{
@@ -143,6 +154,14 @@ font-family: 'Raleway', sans-serif;
 }
 
 .linkcancion{
+  text-decoration: none;
+}
+
+.linkalbum{
+  text-decoration: none;
+}
+
+.linkartista{
   text-decoration: none;
 }
 
