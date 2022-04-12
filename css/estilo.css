@@ -15,17 +15,19 @@ align-items:center;
 padding-bottom: 25px;
 }
 
-.footer{
+.seccion-footer{
   color: white;
   font-family:'Raleway', sans-serif;
-}
-.seccion-footer{
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  align-items: center;
-
+  align-items: center; 
+ 
 }
+.p-footer{
+  font-size: small;
+}
+
 .logo-footer{
   height: 90px;
   width: 170px;
