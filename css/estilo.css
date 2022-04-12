@@ -21,7 +21,8 @@ padding-bottom: 25px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  align-items: center; 
+  justify-content: space-between;
+  align-items: center;
  
 }
 .p-footer{
@@ -51,6 +52,11 @@ padding-bottom: 25px;
 
 .search{
  align-self: flex-end;
+ width: 50%;
+
+}
+.search input{
+  width: 100%;
 }
 
 a:link{
