@@ -63,11 +63,23 @@ padding-bottom: 25px;
 }
 
 .search{
+  background-color: white;
+  padding: 8px;
+  height: 20px;
+  border-radius: 20px;
+}
+
+.buscador-texto{
+  border: none;
+  background-color: none;
+  outline: none;
+  color: black;
+  font-size: 15px;
 
 }
 
 .search input{
-  border-style:double; 
+  
 }
 
 a:link{
@@ -275,4 +287,10 @@ text-decoration: none;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+}
+
+.resultado-busqueda{
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
 }
