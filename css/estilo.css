@@ -323,28 +323,19 @@ text-decoration: none;
   font-family: 'Raleway', sans-serif;
   color: white;
 }
-.secpp{
-  padding: 15px;
-  margin: 15px;
-  text-align: center;
-}
 .head1{
   font-family: 'Raleway', sans-serif;
   color: white;
+  text-decoration: none;
   text-align: center;
-  margin-top: 4%;
+  margin-top: 50px;
 }
-.artpp{
-  border: 3px rgb(124, 124, 124);
-}
-.rrockk{
-  height: 300px;
-  width: 300px;
-}
-.head3{
+.detgen{
+  font-family: 'Raleway', sans-serif;
   color: white;
-  text-align: start;
+  text-decoration: none;
 }
-.parap{
-  color: white;
+.link2{
+  text-decoration: none;
+  font-family: 'Raleway', sans-serif;
 }
