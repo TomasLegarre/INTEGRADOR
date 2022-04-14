@@ -59,7 +59,7 @@ padding-bottom: 25px;
 }
 
 .gitMusic-logo{
-
+  margin-left: 3%;
 }
 
 .search{
@@ -75,7 +75,6 @@ padding-bottom: 25px;
   outline: none;
   color: black;
   font-size: 15px;
-
 }
 
 .search input{
@@ -90,13 +89,15 @@ a:visited{
 color: white;
 }
 
-.nombretema{
-font-family: 'Raleway', sans-serif;
-color: white;
-}
 .albumde{
 font-family: 'Raleway', sans-serif;
 color: lightgrey;
+text-decoration: none;
+}
+.nombretema{
+font-family: 'Raleway', sans-serif;
+color: lightgrey;
+text-decoration: none;
 }
 .titulotrack{
 font-family: 'Raleway', sans-serif;
@@ -277,10 +278,12 @@ text-decoration: none;
 .albumtitle{
   font-family: 'Raleway', sans-serif;
   color: white;
+  text-decoration: none;
 }
 .generotitle{
   font-family: 'Raleway', sans-serif;
   color: lightgrey;
+  text-decoration: none;
 }
 .albumdetails{
   display: flex;
@@ -293,4 +296,31 @@ text-decoration: none;
   color: white;
   font-family: 'Raleway', sans-serif;
   text-align: center;
+}
+.artistbox{
+  color: white;
+  background-color: rgba(96, 96, 96, 0.4);
+  margin: 70px;
+  padding: 15px;
+  border: 3px solid rgb(124, 124, 124);
+  width: 380px;
+  height: 430px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.artistdetails{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.artistpic{
+  width: 175px;
+  height: 175px;
+}
+.artisttitle{
+  font-family: 'Raleway', sans-serif;
+  color: white;
 }
