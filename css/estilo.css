@@ -8,12 +8,6 @@
   
   
 }
-.logo-gitmusic{
-width: 90px;
-height: 90px;
-align-items:center;
-padding-bottom: 25px;
-}
 
 .seccion-footer{
   color: white;
@@ -59,8 +53,15 @@ padding-bottom: 25px;
 }
 
 .gitMusic-logo{
-  margin-left: 3%;
+  margin-right: 75px;
 }
+
+.logo-gitmusic{
+  width: 90px;
+  height: 90px;
+  align-items:center;
+  padding-bottom: 25px;
+  }
 
 .search{
   background-color: white;
