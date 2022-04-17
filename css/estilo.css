@@ -5,8 +5,6 @@
   background-size: cover;
   background-position: center;
   background-attachment: fixed; 
-  
-  
 }
 
 .seccion-footer{
@@ -17,7 +15,6 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
- 
 }
 .p-footer{
   font-size: small;
@@ -76,10 +73,6 @@
   outline: none;
   color: black;
   font-size: 15px;
-}
-
-.search input{
-  
 }
 
 a:link{
@@ -339,4 +332,16 @@ text-decoration: none;
 .link2{
   text-decoration: none;
   font-family: 'Raleway', sans-serif;
+}
+
+.tus-favoritos{
+  font-family: 'Raleway', sans-serif;
+  color: white;
+  text-decoration: none;
+}
+
+.texto-de-busqueda{
+  font-family:'Raleway', sans-serif;
+  color: white;
+  text-decoration: none;
 }
