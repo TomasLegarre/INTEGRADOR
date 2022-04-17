@@ -344,6 +344,14 @@ text-decoration: none;
   font-family:'Raleway', sans-serif;
   color: white;
   text-decoration: none;
+}
 .divf{
   margin-top: 138px;
+}
+
+.canciones-favoritos{
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap ;
 }
