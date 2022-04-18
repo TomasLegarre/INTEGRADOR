@@ -355,3 +355,44 @@ text-decoration: none;
   flex-direction: row;
   flex-wrap: wrap ;
 }
+
+@media (min-width: 1024px) {
+  ... // desktop
+}
+
+
+  /* navegador y header */ 
+
+@media (max-width: 420px){
+  
+  .header{
+    font-family:'Raleway', sans-serif;
+    align-items: center;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+  }
+  .form-h2{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column; 
+    justify-content: space-around;
+    align-items: center;
+}
+.gitMusic-logo{
+  margin-right: 0px;
+}
+.search{
+  background-color: white;
+  padding: 8px;
+  height: 20px;
+  border-radius: 20px;
+  margin-bottom: 30px;
+}
+
+}
+
