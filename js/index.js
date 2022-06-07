@@ -1,5 +1,5 @@
 
-//solamente por PRACTICAR// despues borro todo
+//solamente por PRACTICAR// despues borro
 
 
 let info = [{
@@ -44,22 +44,3 @@ let resultado = prompt(mensajeBienvendia)
 let mensaje = "¿Estas seguro que quieres continuar?";
 let resultado2 = confirm(mensaje);
 
-
-
-
-let edad = prompt("¿Cual es tu edad?");
-
-function permiso(edad){
-   
-    let mensaje = ''
-
-if (edad > 18) {
-    mensaje = 'Acceso permitido'
-} 
-else if (edad < 18){
-    mensaje = 'Acceso denegado'
-}
-
-return mensaje
-
-}
