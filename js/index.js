@@ -17,8 +17,23 @@ console.log('error')
        this.submit()
      }
 }
-
-
-
 )
+
+
+let section = document.querySelector('.canciones');
+console.log(section[0].innerHTML);
+
+fetch ('https://api.allorigins.win/raw?url=https://api.deezer.com/chart')
+.then (function(datos) {
+return datos.json();
+
+})
+.then(function(data){
+
+  console.log(data.results);
+})
+
+.catch(function(error){
+  console.log ('el error fue: ' + error);
+})
 
