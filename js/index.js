@@ -57,6 +57,27 @@ section.innerHTML = section2;
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 let artistas1 = document.querySelector ('.artistas') 
 
 fetch ('https://api.allorigins.win/raw?url=https://api.deezer.com/chart/0/artists')
