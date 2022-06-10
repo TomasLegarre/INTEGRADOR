@@ -21,16 +21,32 @@ console.log('error')
 
 
 let section = document.querySelector('.canciones');
-console.log(section[0].innerHTML);
 
-fetch ('https://api.allorigins.win/raw?url=https://api.deezer.com/chart')
-.then (function(datos) {
-return datos.json();
+
+fetch ('https://api.allorigins.win/raw?url=https://api.deezer.com/chart/0/tracks')
+   .then (function(datos) {
+   return datos.json();
 
 })
-.then(function(data){
+   .then(function(info){
+      console.log (info)
 
-  console.log(data.results);
+         let section2 = ''
+         for (let i = 0; i < 4; i++){ 
+
+       section2 += ` <article class="cajas-canciones">
+        <img src=${info.data[i].artist.picture} alt="" class="imagenC bohemian"> 
+        <br> <br>
+        <a 
+          href="./detail-track.html?id=${info.data[i].id}"
+          class="linkcancion"> ${info.data[i].title}
+        </a>
+        </article> `
+        }
+
+section.innerHTML = section2; 
+
+
 })
 
 .catch(function(error){
