@@ -27,7 +27,7 @@ let idCancion = qsToObject.get ('id');
 
 let canciones1 = document.querySelector ('.trackdetails')
 
-fetch ('https://api.allorigins.win/raw?url=https://api.deezer.com/track/3135556')
+fetch ('https://api.allorigins.win/raw?url=https://api.deezer.com/track/' + idCancion)
   
   .then (function(detalle) {
   return detalle.json();
@@ -42,7 +42,7 @@ fetch ('https://api.allorigins.win/raw?url=https://api.deezer.com/track/3135556'
     canciones2 += `
 
     <article class="trackbox">
-    <img src="${tracks.album.cover}" alt="fotoboh" class="fotobohemian track">
+    <img src="${tracks.album[i].cover}" alt="fotoboh" class="fotobohemian track">
     <a href="./detail-artist.html" class="nombretema"><br> ${tracks.title} </a>
     <br>
     <a href="./detail-album.html" class="albumde"><br>  </a>
@@ -51,7 +51,7 @@ fetch ('https://api.allorigins.win/raw?url=https://api.deezer.com/track/3135556'
     <iframe title="deezer-widget" src="https://widget.deezer.com/widget/dark/track/3135556" width="100%" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media; clipboard-write"></iframe>
     <br>
     <br>
-    <button class="boton">+ Agregar a mi Playlist</button>
+    <button class="boton" type="submit">+ Agregar a mi Playlist</button>
     </article>
     
     `
