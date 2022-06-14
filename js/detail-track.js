@@ -21,7 +21,7 @@ console.log('error')
 
 
 )
-
+//FALTA EL ID DE LA CANCIÓN
 let canciones1 = document.querySelector ('.trackdetails')
 let queryString = location.search;
 let qsToObject = new URLSearchParams (queryString);
@@ -46,7 +46,7 @@ fetch ('https://api.allorigins.win/raw?url=https://api.deezer.com/track/3135556'
     <img src="${tracks.album.cover}" alt="fotoboh" class="fotobohemian track">
     <a href="./detail-artist.html" class="nombretema"><br> ${tracks.title} </a>
     <br>
-    <a href="./detail-album.html" class="albumde"><br> </a>
+    <a href="./detail-album.html" class="albumde"><br> ${tracks.album.title} </a>
     <br>
     <iframe title="deezer-widget" src="https://widget.deezer.com/widget/dark/track/3135556" width="100%" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media; clipboard-write"></iframe>
     <br>
@@ -59,6 +59,16 @@ fetch ('https://api.allorigins.win/raw?url=https://api.deezer.com/track/3135556'
   
   }
 })
+
+//BOTÓN "AGREGAR A PLAYLIST"
+let boton = document.querySelector('button');
+
+boton.addEventListener('click', function() {
+    console.log('¡Añadiste la canción a tu Playlist!');
+    
+}) ;
+
+
 
 
 
