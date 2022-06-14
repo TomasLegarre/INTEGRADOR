@@ -22,10 +22,13 @@ console.log('error')
 
 )
 
-let cacniones1 = document.querySelector ('.trackdetails')
+let canciones1 = document.querySelector ('.trackdetails')
+let queryString = location.search;
+let qsToObject = new URLSearchParams (queryString);
+let idCancion = qsToObject.get ('id'); 
 
 
-fetch ('https://api.allorigins.win/raw?url=https://api.deezer.com/chart/0/tracks')
+fetch ('https://api.allorigins.win/raw?url=https://api.deezer.com/track/3135556')
   
   .then (function(detalle) {
   return detalle.json();
@@ -38,22 +41,24 @@ fetch ('https://api.allorigins.win/raw?url=https://api.deezer.com/chart/0/tracks
   for (let i = 0; i < 5; i++){
     
     canciones2 += `
+
     <article class="trackbox">
-    <img src="${tracks.data[i].picture_small}" alt="fotoboh" class="fotobohemian track">
-    <a href="./detail-artist.html" class="nombretema"><br> ${tracks.data[i].title} </a>
+    <img src="${tracks.album.cover}" alt="fotoboh" class="fotobohemian track">
+    <a href="./detail-artist.html" class="nombretema"><br> ${tracks.title} </a>
     <br>
-    <a href="./detail-album.html?=id=${tracks.data[i].id}" class="albumde"><br> ${tracks.data[i].album}</a>
+    <a href="./detail-album.html" class="albumde"><br> </a>
     <br>
-    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/3z8h0TU7ReDPLIbEnYhWZb?utm_source=generator&theme=0" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+    <iframe title="deezer-widget" src="https://widget.deezer.com/widget/dark/track/3135556" width="100%" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media; clipboard-write"></iframe>
     <br>
     <br>
     <button class="boton">+ Agregar a mi Playlist</button>
-</article>
-    
+    </article>
     
     `
-  cacniones1.innerHTML = canciones2;
+  canciones1.innerHTML = canciones2;
   
   }
+})
 
-  })
+
+

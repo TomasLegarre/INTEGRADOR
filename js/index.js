@@ -89,7 +89,7 @@ fetch ('https://api.allorigins.win/raw?url=https://api.deezer.com/chart/0/albums
 //ARTISTAS
 let artistas1 = document.querySelector ('.artistas') 
 
-fetch ('https://api.allorigins.win/raw?url=https://api.deezer.com/chart/0/artists')
+fetch ('https://api.allorigins.win/raw?url=https://api.deezer.com/track')
       .then(function(datos) {
         return datos.json();
       })
