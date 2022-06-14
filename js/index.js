@@ -89,7 +89,7 @@ fetch ('https://api.allorigins.win/raw?url=https://api.deezer.com/chart/0/albums
 //ARTISTAS
 let artistas1 = document.querySelector ('.artistas') 
 
-fetch ('https://api.allorigins.win/raw?url=https://api.deezer.com/track')
+fetch ('https://api.allorigins.win/raw?url=https://api.deezer.com/chart/0/artists')
       .then(function(datos) {
         return datos.json();
       })
@@ -107,7 +107,12 @@ fetch ('https://api.allorigins.win/raw?url=https://api.deezer.com/track')
             <br><br> ${info.data[i].name} </a>
             </article> ` 
   
-  artistas1.innerHTML = artistas2; 
+        artistas1.innerHTML = artistas2; 
   }
   
   })  
+  .catch(function(error){
+    console.log ('el error fue: ' + error);
+  })
+
+
