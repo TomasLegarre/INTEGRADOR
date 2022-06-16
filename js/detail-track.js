@@ -42,18 +42,18 @@ fetch ('https://api.allorigins.win/raw?url=https://api.deezer.com/track/' + idCa
     canciones1.innerHTML = `
 
     <article class="trackbox">
-    <img src="${tracks.cover}" alt="fotoboh" class="fotobohemian track">
-    <a href="./detail-artist.html" class="nombretema"><br> ${tracks.title} </a>
-    <br>
-    <a href="./detail-album.html" class="albumde"><br>  </a>
+    <img src="${tracks.album.cover}" alt="fotoboh" class="fotobohemian track">
+    
+    <a href="" class="nombretema"><br> ${tracks.title} </a>
+    <a href="./detail-artist.html" class="nombretema"><br> ${tracks.artist.name} </a>
+    <a href="./detail-album.html" class="albumde">  </a>
     <a href="./detail-album.html" class="albumde"><br> ${tracks.album.title} </a>
     <br>
     <iframe title="deezer-widget" src="https://widget.deezer.com/widget/dark/track/${idCancion}" width="100%" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media; clipboard-write"></iframe>
     <br>
     <br>
-    <button class="boton" type="submit">+ Agregar a mi Playlist</button>
-    </article>
     
+    </article>
     `
   
   
