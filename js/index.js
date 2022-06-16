@@ -100,7 +100,7 @@ fetch ('https://api.allorigins.win/raw?url=https://api.deezer.com/chart/0/artist
            let artistas2  = ''
            for (let i = 0; i < 5; i++){
   
-         artistas2 += ` <section class="artistas">
+            artistas2 += ` <section class="artistas">
             <article class="cajas-artistas">
             <img src="${info.data[i].picture}" alt="" class="imagenAr">
             <a href="./detail-artist.html?id=${info.data[i].id}" class="linkartista"> 
