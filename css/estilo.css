@@ -232,10 +232,11 @@ text-decoration: none;
   }
   .sectionp{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-between;
     margin-bottom: 3%;
+    
   }
   .gen{
     width: 175px;
