@@ -16,8 +16,31 @@ console.log('error')
      else{
        this.submit()
      }
-}
+})
 
 
 
-)
+let queryString = location.search;
+let qsToObject = new URLSearchParams (queryString);
+let idGenero = qsToObject.get ('id'); 
+
+let generos1 = document.querySelector ('.artistdetails')
+
+fetch('https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre/' + idGenero)
+  .then (function(detalle) {
+  return detalle.json();
+  })
+
+
+  .then (function(data){
+    console.log (data);
+
+      let nombre = document.querySelector('.link2');
+      let foto = document.querySelector('.artistpic');
+      nombre.innerText = data.name;
+      foto.src = data.picture_big;
+  })
+
+  .catch(function (error) {
+    console.log(error);
+  })

@@ -27,7 +27,7 @@ let idCancion = qsToObject.get ('id');
 
 let canciones1 = document.querySelector ('.trackdetails')
 
-fetch ('https://api.allorigins.win/raw?url=https://api.deezer.com/track/' + idCancion)
+fetch ('https://cors-anywhere.herokuapp.com/https://api.deezer.com/track/' + idCancion)
   
   .then (function(detalle) {
   return detalle.json();
