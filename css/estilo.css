@@ -373,3 +373,38 @@ text-decoration: none;
   margin-bottom: 30px;
 }
 }
+
+
+
+/** haciendo el favortios **/
+
+.titulo-favoritos{
+  color: white;
+}
+
+.playlist-container{
+  width: 100%;
+  /* background-color: rgba(73, 73, 73, 0.89); */
+}
+.agregar{
+  width: 50%;
+  margin: auto;
+  position: relative;
+  top: 10px;
+}
+
+.no-playlist{
+  color: white;
+  width: 70%;
+  margin: auto;
+  text-align: center;
+}
+
+.boton{
+  background-color: white;
+  border-radius: 20px;
+  border: none;
+  text-align: center;
+  padding: 15px;
+}
+
