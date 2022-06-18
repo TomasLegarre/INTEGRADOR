@@ -38,14 +38,24 @@ fetch(urlAlbum)
   .then (function(data){
     console.log (data);
 
-    album1.innerHTML = `
-    <article class="albumbox">
-            <img src="./img-album/coldplay_ghost_stories.jpeg" alt="" class="albumpic">
-            <a href="./detail-artist.html" class="albumtitle"<br><br> Coldplay - 2014</a>
-            <a href="./detail-genres.html" class="generotitle"><br> POP</a><br>
-            <iframe class="iframealbum" style="border-radius:12px" src="https://open.spotify.com/embed/album/2G4AUqfwxcV1UdQjm2ouYr?utm_source=generator&theme=0" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
-        </article>
-    `
+    let img = document.querySelector('.albumpic')
+    let iframe = document.querySelector('.iframealbum')
+    let titulo = document.querySelector('.albumtitle')
+    let titulog = document.querySelector('.generotitle')
+
+    img.src = data.artist.picture
+    iframe.src = `https://widget.deezer.com/widget/dark/album/${idAlbum}`
+    titulo.innerText = data.title
+    titulog.innerText = data.genres.data[0].name
+    console.log(iframe)
+    // album1.innerHTML = `
+    // <article class="albumbox">
+    //         <img src="./img-album/coldplay_ghost_stories.jpeg" alt="" class="albumpic">
+    //         <a href="./detail-artist.html" class="albumtitle"<br><br> Coldplay - 2014</a>
+    //         <a href="./detail-genres.html" class="generotitle"><br> POP</a><br>
+    //         <iframe class="iframealbum" style="border-radius:12px" src="https://open.spotify.com/embed/album/2G4AUqfwxcV1UdQjm2ouYr?utm_source=generator&theme=0" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+    //     </article>
+    // `
   })
 
   .catch(function (error) {
