@@ -341,6 +341,12 @@ text-decoration: none;
   text-decoration: none;
 }
 
+.titulo-de-busqueda{
+  font-family:'Raleway', sans-serif;
+  color: white;
+  text-decoration: none;
+}
+
 .texto-de-busqueda{
   font-family:'Raleway', sans-serif;
   color: white;
