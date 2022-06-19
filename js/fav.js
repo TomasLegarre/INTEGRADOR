@@ -20,7 +20,7 @@ console.log('error')
 
 
 
-// Vamos a armar el js de fav
+// Vamos a armar el js de fav --> empezando!! 
 
 
 let proxy = "";
