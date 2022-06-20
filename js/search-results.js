@@ -46,22 +46,21 @@ for (let i = 0; i<datos.data.length; i++){
   section.innerHTML += ` 
   
   <article class="texto-de-busqueda">
-  <img src="${datos.data[i].album.cover_medium}" alt="" class="foto">
+  <h1 class= "titulo"></h1>
   <h3 class="nombre"><br> <a href="./detail-track.html?id=${datos.data[i].id}"> ${datos.data[i].title} </a> <br> <a href="./detail-artist.html?id=${datos.data[i].artist.id}"> ${datos.data[i].artist.name} </a> <br> <a href="./detail-album.html?id=${datos.data[i].album.id}"> ${datos.data[i].album.title}</a> <h3>
+  <img src="${datos.data[i].album.cover_medium}" alt="" class="foto">
   <br>
 </article>
   
   `
-
 }
-if (datos.length == 0) {
+if (datos.data.length == 0) {
   titulo.innerHTML = "No se encontraron resultados para tu búsqueda"
 }
-
+else{
+  titulo.innerHTML = 'Estos son los resultados para: ' + idBuscador
+}
   })
-
-
-
 
   window.onload = function() {
     cargador.style.display = 'none';
