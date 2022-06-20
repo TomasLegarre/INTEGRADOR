@@ -23,31 +23,45 @@ console.log('error')
 )
 
 let queryString = location.search;
-let qsToObject = new URLSearchParams (queryString);
-let idBuscador = qsToObject.get ('id'); 
+let qsToObject = new URLSearchParams (queryString); //metodo nativo de java --> paramtero la varaible anterior. 
+let idBuscador = qsToObject.get ('buscar'); 
+console.log (location)
 
-let resultados = document.querySelector ('.texto-de-busqueda')
+
 let cargador = document.querySelector ('.spinner')
 
-let urlTrack = 'https://cors-anywhere.herokuapp.com/https://api.deezer.com/track/' + idBuscador;
-let urlAlbum = 'https://cors-anywhere.herokuapp.com/https://api.deezer.com/album/' + idBuscador;
-let urlArtistas = 'https://cors-anywhere.herokuapp.com/https://api.deezer.com/artist/' + idBuscador;
-let urlGeneros = 'https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre/' + idBuscador;
+let urlTrack = 'https://cors-anywhere.herokuapp.com/https://api.deezer.com/search/track?q=' + idBuscador;
 
-window.onload = function() {
-  cargador.style.display = 'none';
-}
-
-fetch(urlAlbum)
+fetch(urlTrack)
   .then (function(response){
     return response.json();
   })
   .then (function(datos) {
     console.log(datos)
 
-    let img = document.querySelector ('.foto')
-    let nombre = document.querySelector ('.nombre')
+  let section = document.querySelector ('.articulos-busqueda')
 
-    img.src = datos.artist.picture 
-    nombre.innerText = datos.title
+for (let i = 0; i<datos.data.length; i++){
+
+  section.innerHTML += ` 
+  
+  <article class="texto-de-busqueda">
+  <img src="${datos.data[i].album.cover_medium}" alt="" class="foto">
+  <h3 class="nombre"><br> <a href="./detail-track.html?id=${datos.data[i].id}"> ${datos.data[i].title} </a> <br> <a href="./detail-artist.html?id=${datos.data[i].artist.id}"> ${datos.data[i].artist.name} </a> <br> <a href="./detail-album.html?id=${datos.data[i].album.id}"> ${datos.data[i].album.title}</a> <h3>
+  <br>
+</article>
+  
+  `
+
+}
+  
+
   })
+
+
+
+
+  window.onload = function() {
+    cargador.style.display = 'none';
+  }
+  

@@ -23,46 +23,53 @@ console.log('error')
 // Vamos a armar el js de fav --> empezando!! 
 
 
-let proxy = "";
-let url = "";
+let contenedor = document.querySelector('.playlist-contenedor')
+let titulo = document.querySelector ('.titulo-favoritos')
 
-let recuperoStorage = localStorage.getItem ('playlist');
-let playlist = JSON.parse(recuperoStorage);
+let listaPlaylist = []; 
+if(localStorage.getItem('playlist') && localStorage.getItem('playlist') != null){
+    listaPlaylist = JSON.parse(localStorage.getItem('playlist'));
+  }
+if (listaPlaylist.length == 0) {
+    titulo.innerHTML = "No tenes nada en tus favoritos"
+}else {
 
-let plistWrapper = document.querySelector('.listadereproduccion')
-let cuerpo = document.querySelector ('.playlist-contenedor')
 
-   if(recuperoStorage == null || recuperoStorage == '[]') {
+  for (let i=0; i<listaPlaylist.length; i++ ) {
 
-    playlist =[]
-    plistWrapper.innerHTML += '<h3 class="no-playlist"> En este momento no hay canciones en tu playlist </h3>'
-}
-   else{
-    playlist.forEach(function(trackId){
-        buscarYMostrar(trackId)
-    })
-}
+  
 
-   function buscarYMostrar(trackId){
+   let urlTrack = 'https://cors-anywhere.herokuapp.com/https://api.deezer.com/track/' + listaPlaylist[i];
 
-     var proxy = ''
-     var url = proxy + '' + trackId;
+    fetch(urlTrack)
+      .then (function(response){
+    return response.json();
+  })
+     .then (function(datos) {
+    console.log(datos)
+ 
+    contenedor.innerHTML += ` 
+  
+  <article class="texto-de-busqueda">
+  <img src="${datos.album.cover_medium}" alt="" class="foto">
+  <h3 class="nombre"><br> <a href="./detail-track.html?id=${datos.id}"> ${datos.title} </a> <br> <a href="./detail-artist.html?id=${datos.artist.id}"> ${datos.artist.name} </a> <br> <a href="./detail-album.html?id=${datos.album.id}"> ${datos.album.title}</a> <h3>
+  <br>
+</article>
+  
+  `
 
-     fetch(url)
-     .then (function(response){
-         return response.json();
-     })
-     .then(function(truck){
-         plistWrapper.innerHTML += '<div class ="player-playlist"><iframe scrolling="no" frameborder="0" allowTransparency="true" src="https://www.deezer.com/plugins/player?format=classic&autoplay=false&playlist=true&width=80%&height=63&color=25DFCF&layout=&size=medium&type=tracks&id=' + track.id + '&app_id=1" width="80%" height="63"></iframe></div>';
-    })
 
-    .catch (function(error){
-        console.log(error)
-    })
+  
 
-}
+  })
 
-var boton = document.querySelector ('.boton')
+}}
+
+
+
+  
+
+
 
 
 

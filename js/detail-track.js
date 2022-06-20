@@ -62,10 +62,33 @@ fetch ('https://cors-anywhere.herokuapp.com/https://api.deezer.com/track/' + idC
 
 //BOTÓN "AGREGAR A PLAYLIST"
 let boton = document.querySelector('button');
+let listaPlaylist = []; 
 
 boton.addEventListener('click', function() {
-    console.log('¡Añadiste la canción a tu Playlist!');
-    
-}) ;
+
+  if (listaPlaylist.includes(idCancion)) {
+    boton.innerHTML = "+ añadir a playlsit"; 
+    listaPlaylist.splice (listaPlaylist.indexOf(idCancion),1) 
+    console.log (listaPlaylist)
+  }else {
+    listaPlaylist.push (idCancion); 
+    boton.innerHTML = "sacar de favoritos" 
+    console.log (listaPlaylist);
+    }
+
+ // como guarrdar info para usar dentro de otra pagina 
+ // setItem metodo que tiene dos paramteros. nombre, lo que queremos guardar (solo acepta strigns) JSON nos convierte el array en string. 
+
+ localStorage.setItem('playlist', JSON.stringify(listaPlaylist)); 
+ })
+ 
+ 
+// que este // en el otro lado --> que el elemento sea disnto a null --> en playlist hay un valor 
+if(localStorage.getItem('playlist') && localStorage.getItem('playlist') != null){
+  listaPlaylist = JSON.parse(localStorage.getItem('playlist'));
+}
+if(listaPlaylist.includes(idCancion)){
+  boton.innerHTML = "sacar de favoritos"
+}
 
 
