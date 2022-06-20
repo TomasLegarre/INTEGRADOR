@@ -54,7 +54,9 @@ for (let i = 0; i<datos.data.length; i++){
   `
 
 }
-  
+if (datos.length == 0) {
+  titulo.innerHTML = "No se encontraron resultados para tu búsqueda"
+}
 
   })
 

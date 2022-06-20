@@ -67,12 +67,12 @@ let listaPlaylist = [];
 boton.addEventListener('click', function() {
 
   if (listaPlaylist.includes(idCancion)) {
-    boton.innerHTML = "+ añadir a playlsit"; 
+    boton.innerHTML = "+ Agregar a mi Playlist"; 
     listaPlaylist.splice (listaPlaylist.indexOf(idCancion),1) 
     console.log (listaPlaylist)
   }else {
     listaPlaylist.push (idCancion); 
-    boton.innerHTML = "sacar de favoritos" 
+    boton.innerHTML = "Eliminar de mi Playlist" 
     console.log (listaPlaylist);
     }
 
