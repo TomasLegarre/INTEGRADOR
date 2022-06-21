@@ -19,7 +19,8 @@ console.log('error')
 })
 
 
-//FALTA EL ID DE LA CANCIÓN
+
+
 let queryString = location.search;
 let qsToObject = new URLSearchParams (queryString);
 let idCancion = qsToObject.get ('id'); 
@@ -35,8 +36,7 @@ fetch ('https://cors-anywhere.herokuapp.com/https://api.deezer.com/track/' + idC
 
   .then (function(tracks){
     console.log (tracks)
-  
-  let canciones2 = ''
+
   
     
     canciones1.innerHTML = `
