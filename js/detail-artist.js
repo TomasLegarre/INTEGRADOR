@@ -28,7 +28,6 @@ let idArtista = qsToObject.get ('id');
 
 let artistas1 = document.querySelector ('.artistdetails')
 
-// let urlArtistas = `https://cors-anywhere.herokuapp.com/https://api.deezer.com/artist/${idArtista}`;
 fetch('https://cors-anywhere.herokuapp.com/https://api.deezer.com/artist/' + idArtista)
   .then (function(detalle) {
   return detalle.json();
