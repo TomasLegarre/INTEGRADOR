@@ -19,7 +19,7 @@ console.log('error')
 })
 
 
-//FALTA EL ID DE LA CANCIÓN
+// detalle de TRACKS
 let queryString = location.search;
 let qsToObject = new URLSearchParams (queryString);
 let idCancion = qsToObject.get ('id'); 
