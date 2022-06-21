@@ -19,13 +19,9 @@ console.log('error')
 })
 
 
-// detalle de TRACKS
-// el.search tiene la querystring --> desde el ? en adelnte
-//queremos convertirlo en un objeto literal para poder usarlo en la practica
-// meteodo new URL --> aca lo guardamos dentro de la variable
-// id cancion --> .get (meteodo) poorque lo unico que queremos de la obj literal es el ID
 
-let queryString = location.search; 
+
+let queryString = location.search;
 let qsToObject = new URLSearchParams (queryString);
 let idCancion = qsToObject.get ('id'); 
 
