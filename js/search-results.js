@@ -5,7 +5,7 @@ buscador.addEventListener('submit', function(evento) {
 
 evento.preventDefault();
 console.log('error')
-
+//CONDICIONES
       if(campo.value == ''){
          alert('¿Que que queres buscar?')
 
@@ -23,9 +23,8 @@ console.log('error')
 )
 
 let queryString = location.search;
-let qsToObject = new URLSearchParams (queryString); //metodo nativo de java --> paramtero la varaible anterior. 
+let qsToObject = new URLSearchParams (queryString); 
 let idBuscador = qsToObject.get ('buscar'); 
-console.log (location)
 
 
 let cargador = document.querySelector ('.spinner')
@@ -54,8 +53,14 @@ for (let i = 0; i<datos.data.length; i++){
   
   `
 }
+<<<<<<< HEAD
+
+
+=======
+>>>>>>> ce64f130c40d71d5791a509e08b2fdf7319b12ca
   })
 
+// 
   window.onload = function() {
     cargador.style.display = 'none';
   }

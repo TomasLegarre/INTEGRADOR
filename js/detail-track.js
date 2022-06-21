@@ -36,7 +36,6 @@ fetch ('https://cors-anywhere.herokuapp.com/https://api.deezer.com/track/' + idC
 
   .then (function(tracks){
     console.log (tracks)
-
   
     
     canciones1.innerHTML = `
@@ -55,10 +54,8 @@ fetch ('https://cors-anywhere.herokuapp.com/https://api.deezer.com/track/' + idC
     
     </article>
     `
-  
-  
-  
 })
+
 
 //BOTÓN "AGREGAR A PLAYLIST"
 let boton = document.querySelector('button');
@@ -67,8 +64,8 @@ let listaPlaylist = [];
 boton.addEventListener('click', function() {
 
   if (listaPlaylist.includes(idCancion)) {
-    boton.innerHTML = "+ Agregar a mi Playlist"; 
     listaPlaylist.splice (listaPlaylist.indexOf(idCancion),1) 
+    boton.innerHTML = "+ Agregar a mi Playlist"; 
     console.log (listaPlaylist)
   }else {
     listaPlaylist.push (idCancion); 
@@ -76,19 +73,19 @@ boton.addEventListener('click', function() {
     console.log (listaPlaylist);
     }
 
- // como guarrdar info para usar dentro de otra pagina 
- // setItem metodo que tiene dos paramteros. nombre, lo que queremos guardar (solo acepta strigns) JSON nos convierte el array en string. 
+ // GUARDAR INFO --> convertimos con JSON de array en string
 
  localStorage.setItem('playlist', JSON.stringify(listaPlaylist)); 
  })
  
- 
-// que este // en el otro lado --> que el elemento sea disnto a null --> en playlist hay un valor 
+//ANTES DE TOCAR EL BOTON PREPARAMOS LA PLAYLIST: 
+// si tenemos elelemento (q el boton diga dejar de seguir) &&(que se cumplan las dos)// y es DISNTO A undefined 
+// quiero que nuestra variable local pase a tener lo que hay en el local storgae  
 if(localStorage.getItem('playlist') && localStorage.getItem('playlist') != null){
   listaPlaylist = JSON.parse(localStorage.getItem('playlist'));
 }
 if(listaPlaylist.includes(idCancion)){
-  boton.innerHTML = "sacar de favoritos"
+  boton.innerHTML = "Eliminar de mi Playlist"
 }
 
 
