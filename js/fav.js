@@ -31,7 +31,7 @@ if(localStorage.getItem('playlist') && localStorage.getItem('playlist') != null)
     listaPlaylist = JSON.parse(localStorage.getItem('playlist'));
   }
 if (listaPlaylist.length == 0) {
-    titulo.innerHTML = "No tenes nada en tus favoritos"
+    titulo.innerHTML = "¡PLAYLIST VACÍA!"
 }else {
 
 
