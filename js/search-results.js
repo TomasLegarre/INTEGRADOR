@@ -5,7 +5,7 @@ buscador.addEventListener('submit', function(evento) {
 
 evento.preventDefault();
 console.log('error')
-
+//CONDICIONES
       if(campo.value == ''){
          alert('¿Que que queres buscar?')
 
@@ -23,9 +23,8 @@ console.log('error')
 )
 
 let queryString = location.search;
-let qsToObject = new URLSearchParams (queryString); //metodo nativo de java --> paramtero la varaible anterior. 
+let qsToObject = new URLSearchParams (queryString); 
 let idBuscador = qsToObject.get ('buscar'); 
-console.log (location)
 
 
 let cargador = document.querySelector ('.spinner')
@@ -54,14 +53,11 @@ for (let i = 0; i<datos.data.length; i++){
   
   `
 }
-if (datos.data.length == 0) {
-  titulo.innerHTML = "No se encontraron resultados para tu búsqueda"
-}
-else{
-  titulo.innerHTML = 'Estos son los resultados para: ' + idBuscador
-}
+
+
   })
 
+// 
   window.onload = function() {
     cargador.style.display = 'none';
   }
