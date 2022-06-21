@@ -58,9 +58,6 @@ if (listaPlaylist.length == 0) {
   
   `
 
-
-  
-
   })
 
 }}

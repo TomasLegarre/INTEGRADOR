@@ -53,11 +53,8 @@ for (let i = 0; i<datos.data.length; i++){
   
   `
 }
-<<<<<<< HEAD
 
 
-=======
->>>>>>> ce64f130c40d71d5791a509e08b2fdf7319b12ca
   })
 
 // 

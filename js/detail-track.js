@@ -83,8 +83,9 @@ boton.addEventListener('click', function() {
  })
  
 //ANTES DE TOCAR EL BOTON PREPARAMOS LA PLAYLIST: 
-// si tenemos elelemento (q el boton diga dejar de seguir) &&(que se cumplan las dos)// y es DISNTO A undefined 
-// quiero que nuestra variable local pase a tener lo que hay en el local storgae  
+// si tenemos elelemento &&(que se cumplan las dos)// y es DISNTO A undefined 
+// quiero que nuestra variable local pase a tener lo que hay en el local storgae 
+
 if(localStorage.getItem('playlist') && localStorage.getItem('playlist') != null){
   listaPlaylist = JSON.parse(localStorage.getItem('playlist'));
 }
